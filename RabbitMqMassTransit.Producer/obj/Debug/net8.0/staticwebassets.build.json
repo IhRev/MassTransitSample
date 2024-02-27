@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "VUFixwAIdYB3eaVGIjRsA7ZHeaVYMsSUa+tx6kMkbZ4=",
+  "Source": "RabbitMqMassTransit.Producer",
+  "BasePath": "_content/RabbitMqMassTransit.Producer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

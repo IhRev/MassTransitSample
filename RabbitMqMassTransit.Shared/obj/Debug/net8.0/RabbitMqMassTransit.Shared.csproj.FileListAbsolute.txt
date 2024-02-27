@@ -1,0 +1,11 @@
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/bin/Debug/net8.0/RabbitMqMassTransit.Shared.deps.json
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/bin/Debug/net8.0/RabbitMqMassTransit.Shared.dll
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/bin/Debug/net8.0/RabbitMqMassTransit.Shared.pdb
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/obj/Debug/net8.0/RabbitMqMassTransit.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/obj/Debug/net8.0/RabbitMqMassTransit.Shared.AssemblyInfoInputs.cache
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/obj/Debug/net8.0/RabbitMqMassTransit.Shared.AssemblyInfo.cs
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/obj/Debug/net8.0/RabbitMqMassTransit.Shared.csproj.CoreCompileInputs.cache
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/obj/Debug/net8.0/RabbitMqMassTransit.Shared.dll
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/obj/Debug/net8.0/refint/RabbitMqMassTransit.Shared.dll
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/obj/Debug/net8.0/RabbitMqMassTransit.Shared.pdb
+/Users/igorreva/RiderProjects/MassTransitSample/RabbitMqMassTransit.Shared/obj/Debug/net8.0/ref/RabbitMqMassTransit.Shared.dll

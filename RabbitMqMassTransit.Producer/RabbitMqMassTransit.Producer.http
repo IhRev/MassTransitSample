@@ -1,0 +1,6 @@
+@RabbitMqMassTransit.Producer_HostAddress = http://localhost:5227
+
+GET {{RabbitMqMassTransit.Producer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
