@@ -1,5 +1,3 @@
-using RabbitMqMassTransit.Shared;
-
 namespace RabbitMqMassTransit.Consumer.MessageStorage;
 
 public class MessageStore : IMessageStore

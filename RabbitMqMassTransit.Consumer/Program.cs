@@ -8,16 +8,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IMessageStore, MessageStore>();
-string rabbitMqHost = builder.Configuration["RabbitMq"] 
+var rabbitMqHost = builder.Configuration["RabbitMq"] 
                       ?? throw new ConfigurationException("RabbitMq connection string not found");
 builder.Services.AddMassTransit(config =>
 {
     config.AddConsumer<MessageConsumer>();
-    
     config.UsingRabbitMq((ctx, cfg) =>
     {
         cfg.Host(new Uri(rabbitMqHost));
-        cfg.ConfigureEndpoints(ctx);
+        cfg.ReceiveEndpoint("message_exchange", c =>
+        {
+            c.ConfigureConsumer<MessageConsumer>(ctx);
+        });
     });
 });
 

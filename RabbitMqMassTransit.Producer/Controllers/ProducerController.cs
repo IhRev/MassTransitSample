@@ -6,23 +6,17 @@ namespace RabbitMqMassTransit.Producer.Controllers;
 
 [Route("[controller]")]
 [ApiController]
-public class ProducerController : ControllerBase
+public class ProducerController(ISendEndpointProvider sendEndpointProvider) : ControllerBase
 {
-    private readonly ISendEndpointProvider _sendEndpointProvider;
-    private readonly IConfiguration _configuration;
-
-    public ProducerController(ISendEndpointProvider sendEndpointProvider, IConfiguration configuration)
-    {
-        _sendEndpointProvider = sendEndpointProvider;
-        _configuration = configuration;
-    }
+    private const string ExchangeName = "message_exchange";
     
     [HttpPost("send_message")]
     public async Task<ActionResult> SendMessage([FromQuery]string message)
     {
-        string uri = _configuration["RabbitMq"];
-        ISendEndpoint sendEndpoint = await _sendEndpointProvider.GetSendEndpoint(new Uri(uri));
+        var sendEndpoint = await sendEndpointProvider.GetSendEndpoint(GetUri());
         await sendEndpoint.Send(new Message() { Content = message });
         return Ok();
     }
+
+    private static Uri GetUri() => new($"exchange:{ExchangeName}");
 }
